@@ -17,9 +17,8 @@ EXIT: send this command to the server.
 
 UPLOAD/DOWNLOAD/RETRIEVE: if "SUCCESS" is received, it indicates that the server has successfully received the command with the given file name from clients. Print out "SUCCESS" and then allow the user to input the next command.
 
-Other cases: receive the error message "ERROR " that is sent by the server. Print out the error message and allow the user to input another command.
+Other cases: receive the error message "WRONG COMMAND" that is sent by the server. Print out the error message and allow the user to input another command.
 
-When the client has sent the "exit" command and received "SUCCESS" from the server in response, close the connection socket.
 
 <br/>
 <br/>
