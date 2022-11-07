@@ -5,7 +5,7 @@ Python implementation of the client side of a remote file storage system. The re
 <br/>
 <br/>
 
-Description: send the command to the server.
+***Description: send the command to the server.***
 
 UPLOAD: send the to-be-uploaded file name to the file server. If the file is not in the server, the program then uploads the file line by line until the last line that consists only of a "#" followed by a newline character '\n'. The file is saved at the server under the file name.
 
@@ -23,7 +23,9 @@ When the client has sent the "exit" command and received "SUCCESS" from the serv
 
 <br/>
 <br/>
+<br/>
 
+***Instructions***
 
 TCP connection initialization:
     In the serverName field we need to indicate the server IP address.
