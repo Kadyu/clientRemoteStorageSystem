@@ -2,7 +2,8 @@
 
 Python implementation of the client side of a remote file storage system. The remote file storage is a client-server application, where clients can upload, download, and retrieve files from a server. The server runs on a specified port and supports 3 commands executed by the client: UPLOAD, DOWNLOAD, RETRIEVE.
 
-
+<br/>
+<br/>
 
 Description: send the command to the server.
 
@@ -20,3 +21,32 @@ Other cases: receive the error message "ERROR " that is sent by the server. Prin
 
 When the client has sent the "exit" command and received "SUCCESS" from the server in response, close the connection socket.
 
+<br/>
+<br/>
+
+
+TCP connection initialization:
+    In the serverName field we need to indicate the server IP address.
+    In the serverPort field we need to indicate the Port Number.
+    (By default, there are random IP address and port number, you can change if you need to)
+
+    After indicating the port number and IP address, you can start by running the code.
+    If connection is established, you will see the "Connection successful!" command on the screen
+
+<br/>
+
+Commands:
+    After successful connection, you need to input the command:
+    RETRIEVE xxx, UPLOAD xxx, DOWNLOAD xxx, exit
+    Where xxx stands for filename.
+
+    Each command line will have an appropriate output with some information, 
+    such as connection status and the reason of an error etc.
+
+    After executing all command that you want, you need to type 'exit' command which will result in code termination 
+    and according message will apppear on the screen.
+
+    In case, you have typed the wrong command, it will output the "Wrong Command" text and will ask you for another input.
+    
+    
+ 
